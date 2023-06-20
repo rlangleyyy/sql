@@ -1,1 +1,5 @@
-
+-- find totals unpaid
+SELECT student, sum(rate)
+FROM Clients NATURAL JOIN Sessions
+WHERE paid? = 'n'
+GROUP BY student
