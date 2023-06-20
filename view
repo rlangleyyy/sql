@@ -2,9 +2,9 @@
 SELECT student, SUM(rate) AS 'total owed'
 FROM Clients NATURAL JOIN Sessions
 WHERE paid? = 'n'
-GROUP BY student
+GROUP BY student;
 
 -- find individual unpaid sessions
 SELECT student, date, rate AS 'owed'
 FROM Clients NATURAL JOIN Sessions
-WHERE paid? = 'n'
+WHERE paid? = 'n';
