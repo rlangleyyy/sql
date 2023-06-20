@@ -1,0 +1,9 @@
+CREATE TABLE Clients (
+  student VARCHAR(20),
+  parent VARCHAR(20),
+  rate INTEGER,
+  phone VARCHAR(20));
+CREATE TABLE Sessions
+  student VARCHAR(20),
+  date DATE,
+  paid? CHAR(1));
